@@ -13,6 +13,8 @@ public class Weird
       if (guess > randomNumber)
       {
         System.out.println("too high! Guess Again!");
+        System.out.println("Please try again");
+
       }
       else
       {
