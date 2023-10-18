@@ -1,8 +1,8 @@
-# Loops-1
+# stringSplosion
 
 ## Task
-Given a non-empty string like "Code" return a string like "CCoCodCode".
+Given a non-empty string like "Code" return a string like `CCoCodCode`.
 
-stringSplosion("Code") → "CCoCodCode"
+```stringSplosion("Code") → "CCoCodCode"```
 stringSplosion("abc") → "aababc"
 stringSplosion("ab") → "aab"
