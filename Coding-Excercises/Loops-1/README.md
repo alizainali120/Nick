@@ -1,4 +1,4 @@
-# Loops-1
+# Loops
 
 ## Description
 In this excercise, we will use loops to help us do some simple math.
