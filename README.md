@@ -12,7 +12,7 @@ The repositiory is excusively for Nick Reinhard so he can score a **5** in his A
 - `Solution.java` has a `Solution` class which contains the `main` method (This is where the code executes)
 - Read the comments in `Solution.java` file to better understand where to write the solution
 - Some questions require you to create classes which can be done in the folder named `solution` (`Solution/src/main/java/com/mycompany/solution`)
-- Upload all the files in `solution` folder on GitHub (`Solution/src/main/java/com/mycompany/solution`)
+- Upload all the files in `solution` folder on GitHub after completing the excercise (`Solution/src/main/java/com/mycompany/solution`)
 
 ## Quiz
 - `README` in `Quiz` folder contains links to the Quiz
