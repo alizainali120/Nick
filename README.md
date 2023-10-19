@@ -1,6 +1,14 @@
 # Nick's AP Computer Science A Practice
 The repositiory is excusively for Nick Reinhard so he can score a **5** in his AP exam!
 
+## Schedule
+|Date|Units| 
+|---|---|
+|10/19/2023|4 - Review|
+|10/23/2023|5.1 - 5.3|
+|10/25/2023|5.4 - 5.6|
+|10/30/2023|5.7 - 5.9|
+|11/02/2023|5 - Review|
 
 ## Notes
 `Notes` folder contains detailed explanations and examples that can be helpful when reviewing the material.
