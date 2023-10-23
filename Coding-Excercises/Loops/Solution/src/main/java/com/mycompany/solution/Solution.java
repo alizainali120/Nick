@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        //Do not write here
+        //Do not write here, okay ill write here
         Scanner input = new Scanner(System.in);
         int n = 2;
         
@@ -18,9 +18,17 @@ public class Solution {
             System.out.println("");
             System.out.println("");
         }
+        if (n == 0)
+    System.out.println("Goodbye!");
     }
     
+    
     public static void solution(int n){
+        for (int i = 1; i <= 10; i++)
+        {
+            int result = n * i;
+            System.out.println(n + " x "  + i + " = " + result);
+        }
         //write your code here        
     }
     
