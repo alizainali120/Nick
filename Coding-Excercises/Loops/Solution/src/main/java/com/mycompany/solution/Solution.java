@@ -14,6 +14,7 @@ public class Solution {
             System.out.println("Enter integer between 2-10 to print multiples");
             System.out.println("Enter 0 to exit");
             n = input.nextInt();
+            if (n > 0)
             solution(n);
             System.out.println("");
             System.out.println("");
