@@ -1,7 +1,6 @@
 # 5.1 - Java Class
 
 ## Creating a Class
-
 ```
 public class Student {
 	// body of the class
@@ -36,3 +35,70 @@ public class Student {
 ```
 
 **Main method**: any Java class can have a `main` method which can be used to run that class as a program either to test that one class or as the entry point to a whole program made up of many classes and objects.
+
+
+## Designing a Class
+When designing a class, we need to ask, what data does it represent? What would we want to know about a student? In one program, we might want to know student's grade and subject. In another program, we might want to know student's name, email and phone number (shown in example).
+
+```
+public class Student {
+	// instance variables 
+	private string name;
+	private string email;
+	private string phoneNumber;
+	
+	// constructor
+	public Student(String initName, String initEmail, String initPhone) {
+		name = initName;
+		email = initEmail;
+		phoneNumber = initPhone;
+	}
+	
+	// print all data for a student 
+	public void print() {
+		System.out.println("Name:  " + name);
+		System.out.println("Email:  " + email);
+		System.out.println("Phone Number:  " + phoneNumber);
+	}
+	
+	
+	// main method for testing
+	Public static void main (String[] args) {
+		Student s1 = new Student("Ali", "alizainali@gmail.com", "773-818-5232");
+		s1.print();
+	}
+}
+```
+
+## Instance Variables
+In general, instance variables should be declared `private`. A `private` instance variable can only be accessed by code in the class that declares the variable.
+
+The `Student` class declares 3 private instance variables: `name`, `email`, and `phoneNumber`. Once we have created a class like `Student`, we can create many instances (objects) of the class. The class is like a blueprint that defines the variables and methods for that class. Each object will have their own copies of the same instance variables but with possibly different values in them.
+
+<Insert picture from draw.io>
+
+Good Java style ensures data encapsulation where the instance variables and methods acting on the instance variables are wrapped together into a single unit and the implementation details are hidden. Because only the code in the class can access or change the values of `private` instance variables, it is easier to keep track of how your program works rather than worrying that any code anywhere in a much larger program could possibly change the values of the variables.
+
+Code in other classes can only interact with the `public` methods you provide and cannot directly access the `private` instance variables.
+
+## Methods
+`public` methods can be accessed from outside the class. You may also write `private` methods that are not accessible outside of the class and therefore can only be used by other methods inside the same class.
+
+To call a method, we need an object that is an instance of the class. We then use the dot (.) operator to call its `public` methods
+
+```
+// call the constructor to create a new student object
+Student s1 = new Student ("Ali", "alizainali@gmail.com", "773-283-2363");
+
+//call s1's print method
+s1.print();
+```
+
+## Object-Oriented Design
+In object-oriented design, programmers often start by designing which classes are needed to solve a problem and then figure out the data/attributes and methods in each class. 
+
+Once you have determined the classes you need, then you can go through the process to design individual classes. 
+
+<Insert uml diagram of Student class>
+UML diagram of the Student class 
+The - in front of the attributes indicate that they are private, and the + in front of the methods indicate that they are public.
