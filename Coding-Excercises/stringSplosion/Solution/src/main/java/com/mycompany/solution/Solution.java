@@ -23,7 +23,13 @@ public class Solution {
     }
     
     public static String solution(String str){
+        String endString = "";
+        for (int i =1 ; i <= str.length(); i++) {
+            String tempString = str.substring(0, i);
+            endString += tempString;
+        }
+        
         //write your code here
-        return str;
+        return endString;
     }
 }
