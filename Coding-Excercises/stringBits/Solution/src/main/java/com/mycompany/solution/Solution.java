@@ -24,8 +24,15 @@ public class Solution {
     }
     
     public static String solution(String str){
-        //write your code here    
-        return str;    
+        //write your code here
+        String endString = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i % 2 == 0) {
+                String tempString = str.substring(i, i + 1);
+                endString += tempString;
+            }
+        }    
+        return endString;    
     }
     
     
